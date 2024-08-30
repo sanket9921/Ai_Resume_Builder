@@ -1,0 +1,58 @@
+
+/* Apply custom scroll bar styles globally */
+::-webkit-scrollbar {
+  width: 2px; /* Width of the scroll bar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000; /* Color of the scroll thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #000; /* Color when hovering */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2d2d2d; /* Color of the track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-panel,
+  .right-panel,
+  .middle-panel {
+    padding: 16px;
+    background-color: #1e1e1e;
+    overflow-y: auto;
+  }
+  
+  .left-panel,
+  .right-panel {
+    flex-shrink: 0;
+  }
+  
+  .middle-panel {
+    flex-grow: 1;
+    background-color: #2d2d2d;
+  }
+  
+  .divider {
+    width: 5px;
+    cursor: col-resize;
+    background-color: #444444;
+    /* z-index: 100; */
+  }
+  
+  .left-divider {
+    cursor: col-resize;
+  }
+  
+  .right-divider {
+    cursor: col-resize;
+  }
+  
